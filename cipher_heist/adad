@@ -1,0 +1,66 @@
+<!-- ======= Scanner Hero Section ======= -->
+<section id="scanner-hero" class="scanner-hero section">
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 text-center" data-aos="fade-up">
+        <h1 class="mb-3" style="font-weight: 800; color: #c8ff00;">Advanced Security Scanner</h1>
+        <p class="lead mb-4" style="color: #e0e0e0;">Comprehensive vulnerability assessment for your web applications and infrastructure</p>
+        
+        <div class="scanner-card mt-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="input-group">
+                <input type="url" class="form-control scanner-input" placeholder="Enter website URL (e.g., https://example.com)" required>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 mt-lg-0">
+                <button class="btn btn-scan w-100">Start Scan</button>
+            </div>
+            </div>
+            
+            <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="quickScan" checked>
+                <label class="form-check-label" for="quickScan" style="color: #e0e0e0;">
+                    Quick Scan (Basic Checks)
+                </label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="fullScan">
+                <label class="form-check-label" for="fullScan" style="color: #e0e0e0;">
+                    Full Scan (In-Depth Analysis)
+                </label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="apiScan">
+                <label class="form-check-label" for="apiScan" style="color: #e0e0e0;">
+                    API Endpoint Testing
+                </label>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-center mt-4">
+            <div class="me-3">
+            <i class="bi bi-shield-check me-2" style="color: #c8ff00;"></i>
+            <span style="color: #e0e0e0;">No Account Required</span>
+            </div>
+            <div class="me-3">
+            <i class="bi bi-clock me-2" style="color: #c8ff00;"></i>
+            <span style="color: #e0e0e0;">Fast Results</span>
+            </div>
+            <div>
+            <i class="bi bi-lock me-2" style="color: #c8ff00;"></i>
+            <span style="color: #e0e0e0;">Private & Secure</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section><!-- End Scanner Hero -->

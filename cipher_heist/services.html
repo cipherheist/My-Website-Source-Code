@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cybersecurity Services | Cipher Heist</title>
+  <meta name="description" content="Professional cybersecurity services including vulnerability assessments, penetration testing, security consulting, and ethical hacking solutions.">
+  <meta name="keywords" content="cybersecurity services, penetration testing, vulnerability assessment, ethical hacking, security consulting">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Service Card Hover Effects */
+    .service-card {
+      background: #1b1b1b;
+      border: 1px solid #252525;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(200, 255, 0, 0.1);
+      border-color: #c8ff00;
+    }
+    
+    .service-card .icon {
+      color: #c8ff00;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .service-card .btn-service {
+      background: transparent;
+      color: #c8ff00;
+      border: 1px solid #c8ff00;
+      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+      transition: all 0.3s ease;
+    }
+    
+    .service-card .btn-service:hover {
+      background: #c8ff00;
+      color: #121212;
+    }
+    
+    /* Process Steps */
+    .process-step {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .process-step:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background: #c8ff00;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    
+    .process-step:after {
+      content: "";
+      position: absolute;
+      left: 9px;
+      top: 25px;
+      width: 2px;
+      height: calc(100% - 25px);
+      background: #c8ff00;
+    }
+    
+    .process-step:last-child:after {
+      display: none;
+    }
+    
+    /* Pricing Table */
+    .pricing-card {
+      background: #1b1b1b;
+      border: 1px solid #252525;
+      transition: all 0.3s ease;
+    }
+    
+    .pricing-card.featured {
+      border-color: #c8ff00;
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px rgba(200, 255, 0, 0.1);
+    }
+    
+    .pricing-card .price {
+      color: #c8ff00;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    
+    .pricing-card .btn-pricing {
+      background: #c8ff00;
+      color: #121212;
+      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+      transition: all 0.3s ease;
+    }
+    
+    .pricing-card .btn-pricing:hover {
+      background: #121212;
+      color: #c8ff00;
+      box-shadow: 0 0 10px rgba(200, 255, 0, 0.5);
+    }
+    
+    /* Testimonial Section */
+    .testimonial-card {
+      background: #1b1b1b;
+      border-left: 3px solid #c8ff00;
+    }
+    
+    /* FAQ Section */
+    .accordion-button {
+      background: #1b1b1b;
+      color: #fff;
+    }
+    
+    .accordion-button:not(.collapsed) {
+      background: #252525;
+      color: #c8ff00;
+    }
+    
+    .accordion-button:focus {
+      box-shadow: 0 0 0 0.25rem rgba(200, 255, 0, 0.25);
+    }
+    
+    .accordion-body {
+      background: #1b1b1b;
+    }
+  </style>
+</head>
+<body class="services-page">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename brand-name">Cipher Heist</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="scanner.html">Scanner</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html">Get Started</a>
+    </div>
+  </header><!-- End Header -->
+
+  <main class="main">
+    <!-- ======= Hero Section ======= -->
+    <section id="services-hero" class="services-hero section" style="background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(27, 27, 27, 0.9)), url('assets/img/bmw-m4-gt3-fia-5120x2880-16259.jpg') center/cover no-repeat;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h1 class="mb-3" style="font-weight: 800;">Professional <span style="color: #c8ff00;">Cybersecurity Services</span></h1>
+            <p class="lead" style="color: #e0e0e0;">Comprehensive security solutions tailored to protect your digital assets from evolving threats</p>
+            
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Solid Button (Test Your Website) -->
+              <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); margin-right: 1rem; overflow: hidden;">
+                <span class="btn-text">Explore Services</span>
+                <i class="bi bi-shield-check ms-2"></i>
+                <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+              </a>
+              
+              <!-- Outline Button (View Services) -->
+              <a href="#scanner" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
+                <span class="btn-text">Request Consultation</span>
+                <i class="bi bi-shield-check ms-2"></i>
+                <span class="btn-cipher-outline-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #121212, #c8ff00); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="our-services" class="our-services section" style="background-color: #121212;">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Our Cybersecurity Services</h2>
+          <div><span>Comprehensive protection for your digital infrastructure</span></div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Penetration Testing -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card p-4">
+              <div class="icon">
+                <i class="bi bi-bug-fill"></i>
+              </div>
+              <h3>Penetration Testing</h3>
+              <p>Simulated cyber attacks to identify vulnerabilities in your systems before malicious actors can exploit them.</p>
+              <ul class="mb-4">
+                <li>Web Application Testing</li>
+                <li>Network Infrastructure Testing</li>
+                <li>API Security Testing</li>
+                <li>Social Engineering</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Learn More</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Vulnerability Assessment -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card p-4">
+              <div class="icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <h3>Vulnerability Assessment</h3>
+              <p>Systematic review of security weaknesses in your IT environment with prioritized remediation guidance.</p>
+              <ul class="mb-4">
+                <li>Automated Scanning</li>
+                <li>Manual Verification</li>
+                <li>Risk Scoring</li>
+                <li>Remediation Planning</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Learn More</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Security Consulting -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card p-4">
+              <div class="icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3>Security Consulting</h3>
+              <p>Expert guidance to develop and implement robust security strategies tailored to your organization.</p>
+              <ul class="mb-4">
+                <li>Security Architecture Review</li>
+                <li>Compliance Advisory</li>
+                <li>Policy Development</li>
+                <li>Incident Response Planning</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Learn More</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Code Review -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card p-4">
+              <div class="icon">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h3>Secure Code Review</h3>
+              <p>In-depth analysis of application source code to identify security flaws and vulnerabilities.</p>
+              <ul class="mb-4">
+                <li>Static Application Testing</li>
+                <li>Manual Code Review</li>
+                <li>OWASP Top 10 Coverage</li>
+                <li>Remediation Guidance</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Learn More</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Incident Response -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card p-4">
+              <div class="icon">
+                <i class="bi bi-incognito"></i>
+              </div>
+              <h3>Incident Response</h3>
+              <p>Rapid containment and remediation of security breaches to minimize impact and restore operations.</p>
+              <ul class="mb-4">
+                <li>24/7 Emergency Support</li>
+                <li>Forensic Investigation</li>
+                <li>Breach Containment</li>
+                <li>Post-Incident Analysis</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Learn More</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Security Training -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card p-4">
+              <div class="icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h3>Security Training</h3>
+              <p>Customized training programs to elevate your team's security awareness and technical skills.</p>
+              <ul class="mb-4">
+                <li>Developer Security Workshops</li>
+                <li>Phishing Awareness</li>
+                <li>Red Team Training</li>
+                <li>Executive Briefings</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Learn More</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Process Section ======= -->
+    <section id="process" class="process section" style="background-color: #1b1b1b;">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Our Security Assessment Process</h2>
+          <div><span>Methodical approach to identifying and mitigating risks</span></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="process-steps">
+              <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                <h3>Discovery & Scoping</h3>
+                <p>We work with you to define assessment boundaries, objectives, and rules of engagement to ensure comprehensive coverage.</p>
+              </div>
+              
+              <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                <h3>Information Gathering</h3>
+                <p>Systematic collection of technical details about your environment through both passive and active reconnaissance.</p>
+              </div>
+              
+              <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                <h3>Vulnerability Identification</h3>
+                <p>Combination of automated scanning and manual testing techniques to uncover security weaknesses.</p>
+              </div>
+              
+              <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                <h3>Exploitation & Validation</h3>
+                <p>Controlled attempts to exploit identified vulnerabilities to validate their impact and business risk.</p>
+              </div>
+              
+              <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                <h3>Reporting & Remediation</h3>
+                <p>Detailed technical report with prioritized findings and actionable recommendations for mitigation.</p>
+              </div>
+              
+              <div class="process-step" data-aos="fade-up" data-aos-delay="600">
+                <h3>Retesting & Verification</h3>
+                <p>Follow-up assessment to verify that identified vulnerabilities have been properly remediated.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Process Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section" style="background-color: #121212;">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Service Packages</h2>
+          <div><span>Flexible options to meet your security needs</span></div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Basic Package -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card p-4 text-center">
+              <h3 class="mb-3">Essential Scan</h3>
+              <div class="price mb-3">$999</div>
+              <p class="mb-4">Ideal for small websites and applications</p>
+              <ul class="text-start mb-4">
+                <li><i class="bi bi-check text-success me-2"></i> Automated Vulnerability Scan</li>
+                <li><i class="bi bi-check text-success me-2"></i> OWASP Top 10 Coverage</li>
+                <li><i class="bi bi-check text-success me-2"></i> Executive Summary Report</li>
+                <li><i class="bi bi-x text-secondary me-2"></i> Manual Verification</li>
+                <li><i class="bi bi-x text-secondary me-2"></i> Remediation Guidance</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Get Started</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Professional Package -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card p-4 text-center featured">
+              <div style="color: #c8ff00;">Most Popular</div>
+              <h3 class="mb-3">Professional Audit</h3>
+              <div class="price mb-3">$2,999</div>
+              <p class="mb-4">Comprehensive assessment for growing businesses</p>
+              <ul class="text-start mb-4">
+                <li><i class="bi bi-check text-success me-2"></i> Automated + Manual Testing</li>
+                <li><i class="bi bi-check text-success me-2"></i> Full OWASP Coverage</li>
+                <li><i class="bi bi-check text-success me-2"></i> Detailed Technical Report</li>
+                <li><i class="bi bi-check text-success me-2"></i> Remediation Guidance</li>
+                <li><i class="bi bi-x text-secondary me-2"></i> Retesting Included</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Get Started</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+
+          <!-- Enterprise Package -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card p-4 text-center">
+              <h3 class="mb-3">Enterprise Suite</h3>
+              <div class="price mb-3">Custom</div>
+              <p class="mb-4">Tailored solutions for large organizations</p>
+              <ul class="text-start mb-4">
+                <li><i class="bi bi-check text-success me-2"></i> Comprehensive Testing</li>
+                <li><i class="bi bi-check text-success me-2"></i> Custom Scope Definition</li>
+                <li><i class="bi bi-check text-success me-2"></i> Executive + Technical Reports</li>
+                <li><i class="bi bi-check text-success me-2"></i> Remediation Support</li>
+                <li><i class="bi bi-check text-success me-2"></i> Retesting Included</li>
+              </ul>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Contact Us</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+          <p class="mb-3">Need something different? We offer custom engagements tailored to your specific requirements.</p>
+          <a href="#scanner" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
+            <span class="btn-text">Request Custom Quote</span>
+            <span class="btn-cipher-outline-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #121212, #c8ff00); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+            <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section" style="background-color: #1b1b1b;">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Client Testimonials</h2>
+          <div><span>What our clients say about our services</span></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="testimonial-card p-4 mb-4" data-aos="fade-up">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="assets/img/testimonials/testimonial-1.jpg" alt="Client" class="rounded-circle me-3" width="60">
+                </div>
+                <div>
+                  <h5 class="mt-0">Sarah Johnson</h5>
+                  <p class="mb-2 text-muted">CTO, TechStart Inc.</p>
+                  <p>"The penetration test uncovered critical vulnerabilities we had missed in our internal audits. The detailed report and remediation guidance helped us significantly improve our security posture."</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card p-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="assets/img/testimonials/testimonial-2.jpg" alt="Client" class="rounded-circle me-3" width="60">
+                </div>
+                <div>
+                  <h5 class="mt-0">Michael Chen</h5>
+                  <p class="mb-2 text-muted">Security Director, FinCorp</p>
+                  <p>"Their incident response team was instrumental in containing a breach and minimizing damage. Their forensic analysis provided clear insights into the attack vector."</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card p-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="assets/img/testimonials/testimonial-3.jpg" alt="Client" class="rounded-circle me-3" width="60">
+                </div>
+                <div>
+                  <h5 class="mt-0">David Wilson</h5>
+                  <p class="mb-2 text-muted">CEO, HealthSecure</p>
+                  <p>"The security training for our developers has dramatically reduced vulnerabilities in our codebase. The hands-on approach made complex concepts accessible."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= FAQ Section ======= -->
+    <section id="faq" class="faq section" style="background-color: #121212;">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <div><span>Common questions about our services</span></div>
+        </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="accordion" id="faqAccordion" style="--bs-accordion-border-color: #c8ff00; --bs-accordion-btn-color: #c8ff00; --bs-accordion-active-color: #c8ff00; --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(200, 255, 0, 0.25);">
+                <!-- Question 1 -->
+                <div class="accordion-item mb-3" data-aos="fade-up" style="background-color: #1b1b1b; border-color: #c8ff00;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="background-color: #1b1b1b; color: #c8ff00;">
+                      What's the difference between vulnerability scanning and penetration testing?
+                    </button>
+                  </h2>
+                  <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body" style="background-color: #1b1b1b; color: #ffffffbd;">
+                      Vulnerability scanning is an automated process that identifies known vulnerabilities in systems and applications. Penetration testing goes further by simulating real-world attacks to exploit vulnerabilities, demonstrating their potential impact, and testing defensive mechanisms. Our penetration tests combine both automated tools and manual testing by security experts.
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="100" style="background-color: #1b1b1b; border-color: #c8ff00;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="background-color: #1b1b1b; color: #c8ff00;">
+                      How often should we conduct security assessments?
+                    </button>
+                  </h2>
+                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body" style="background-color: #1b1b1b; color: #ffffffbd;">
+                      We recommend quarterly vulnerability scanning for most organizations, with annual penetration testing at minimum. High-risk industries or organizations handling sensitive data should consider more frequent testing (semi-annual or quarterly). Additional assessments should be conducted after major system changes, new application deployments, or security incidents.
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="200" style="background-color: #1b1b1b; border-color: #c8ff00;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="background-color: #1b1b1b; color: #c8ff00;">
+                      Do you provide remediation support?
+                    </button>
+                  </h2>
+                  <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body" style="background-color: #1b1b1b; color: #ffffffbd;">
+                      Yes, all our assessment reports include detailed remediation guidance. For Professional and Enterprise packages, we offer consultation calls to help your team understand and implement fixes. We can also provide retesting services to verify that vulnerabilities have been properly addressed.
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="300" style="background-color: #1b1b1b; border-color: #c8ff00;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="background-color: #1b1b1b; color: #c8ff00;">
+                      Are your tests compliant with industry standards?
+                    </button>
+                  </h2>
+                  <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body" style="background-color: #1b1b1b; color: #ffffff9d;">
+                      Our methodologies align with recognized standards including OWASP Testing Guide, NIST SP 800-115, PTES, and ISO 27001. We can tailor assessments to meet specific compliance requirements like PCI DSS, HIPAA, GDPR, or SOC 2. Our reports include mapping to compliance frameworks when requested.
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Question 5 -->
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="400" style="background-color: #1b1b1b; border-color: #c8ff00;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" style="background-color: #1b1b1b; color: #c8ff00;">
+                      What's included in the final report?
+                    </button>
+                  </h2>
+                  <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body" style="background-color: #1b1b1b; color: #ffffffbd;">
+                      Our comprehensive reports include: executive summary for management, detailed technical findings with risk ratings, evidence of vulnerabilities (screenshots, code snippets), step-by-step reproduction instructions, and prioritized remediation recommendations. Enterprise clients receive additional deliverables like raw tool outputs and retesting results.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- End FAQ Section -->
+
+    <!-- ======= CTA Section ======= -->
+    <section id="cta" class="cta section" style="background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(27, 27, 27, 0.9)), url('assets/img/cta-bg.jpg') center/cover no-repeat;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h2 class="mb-4">Ready to Strengthen Your Security?</h2>
+            <p class="mb-4">Contact us today to discuss your security needs and get a customized assessment plan.</p>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); margin-right: 1rem; overflow: hidden;">
+                <span class="btn-text">Get in Touch</span>
+                <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+              </a>
+              <a href="#scanner" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
+                <span class="btn-text">Call Now</span>
+                <span class="btn-cipher-outline-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #121212, #c8ff00); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA Section -->
+     
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Cipher Heist</span>
+          </a>
+          <p class="mt-3">Providing cutting-edge cybersecurity tools and resources since 2020. Our mission is to democratize security knowledge and make digital protection accessible to everyone.</p>
+          
+          <div class="social-links d-flex mt-4">
+            <a href="https://github.com/nizath" class="github"><i class="bi bi-github"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="discord"><i class="bi bi-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#"><i class="bi bi-shield-shaded"></i> Penetration Testing</a></li>
+            <li><a href="#"><i class="bi bi-bug"></i> Vulnerability Assessment</a></li>
+            <li><a href="#"><i class="bi bi-code-square"></i> Code Review</a></li>
+            <li><a href="#"><i class="bi bi-incognito"></i> Incident Response</a></li>
+            <li><a href="#"><i class="bi bi-mortarboard"></i> Security Training</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Have questions about our services? Our team is here to help.</p>
+          <p class="mt-4"><strong><i class="bi bi-envelope"></i> Email:</strong> <span>services@cipherheist.com</span></p>
+          <p><strong><i class="bi bi-telephone"></i> Phone:</strong> <span>+1 (555) 123-4567</span></p>
+          <p><strong><i class="bi bi-shield-lock"></i> PGP Key:</strong> <span><a href="#">0xABCDEF123456</a></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cipher Heist</strong> <span>2020-2023 All Rights Reserved</span></p>
+      <div class="credits">
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms of Service</a> | 
+        <a href="disclaimer.html">Disclaimer</a> |
+        <a href="bug-bounty.html">Bug Bounty</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

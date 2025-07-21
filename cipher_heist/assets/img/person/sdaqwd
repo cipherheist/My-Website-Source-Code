@@ -1,0 +1,33 @@
+
+
+linear-gradient(rgba(27, 27, 27, 0.9), rgba(18, 18, 18, 0.9)), url(assets/img/bmw-m4-gt3-fia-5120x2880-16259.jpg) center / cover no-repeat;
+
+
+    <!-- ======= About Hero Section ======= -->
+    <section id="about-hero" class="about-hero section" style="background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(18, 18, 18, 0.9)), url('assets/img/cyber-bg.jpg') center/cover no-repeat;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h1 class="mb-4">About <span style="color: #c8ff00;">Cipher Heist</span></h1>
+            <p class="lead" style="color: #e0e0e0;">Democratizing cybersecurity through open-source tools and education</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Hero -->
+
+    <section class="about-hero section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h1 class="mb-4">Resource <span style="color: #c8ff00;">Stack to Build Your Cyber Resilience</span></h1>
+            <p class="hero-subheading">Free tutorials, cheat sheets, and guides for security professionals</p>
+            
+            <div class="search-box" data-aos="fade-up" data-aos-delay="100">
+              <input type="text" class="search-input" placeholder="Search resources...">
+              <button class="search-btn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

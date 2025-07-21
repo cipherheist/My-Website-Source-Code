@@ -1,0 +1,521 @@
+:root {
+  --accent-color: #c8ff00;
+  --accent-dark: #a0cc00;
+  --dark-bg: #121212;
+  --text-light: rgba(255,255,255,0.8);
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 0;
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 30%, rgba(200, 255, 0, 0.1) 0%, transparent 50%);
+  z-index: 0;
+}
+
+.hero-logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: -7px;
+  filter: drop-shadow(0 0 15px rgba(200, 255, 0, 0.5));
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.brand-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--accent-color);
+  text-shadow: 0 0 15px rgba(200, 255, 0, 0.5);
+  background: linear-gradient(to right, #c8ff00, #a0cc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.description p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--dark-bg);
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(200, 255, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(200, 255, 0, 0.4);
+}
+
+.btn-accent i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-accent:hover i {
+  transform: translateX(3px);
+}
+
+/* Cybersecurity Tools Section */
+.tools-section {
+  padding: 100px 0;
+  background-color: #121212;
+}
+
+.tool-card {
+  background: #252525;
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  height: 100%;
+  border-left: 3px solid var(--accent-color);
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.tool-card .icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.tool-card .btn-download {
+  background: var(--accent-color);
+  color: #121212;
+  font-weight: 600;
+}
+
+.scanner-section {
+  padding: 80px 0;
+  background: linear-gradient(45deg, #121212 0%, #c8ff00db 50%, #121212 100%);
+}
+.scanner-box {
+  background: #252525;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.scanner-input {
+  background: #333;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.scanner-input:focus {
+  background: #444;
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgba(200, 255, 0, 0.25);
+}
+
+.scan-result {
+  background: #252525;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  display: none;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 60px 0;
+  background-color: #1b1b1b;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* About Section */
+.about {
+  padding: 100px 0;
+  background-color: #121212;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.03);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+  z-index: 2;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.experience-badge:hover {
+  transform: translate(-50%, -5px);
+  box-shadow: 0 15px 25px rgba(13, 110, 253, 0.4);
+}
+
+.experience-badge .years {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.experience-badge .text {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.about-content {
+  padding-left: 30px;
+}
+
+.about-content h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #c8ff00;
+}
+
+.about-content .lead {
+  font-size: 1.25rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.feature-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.feature-item i {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.feature-item h5 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #c8ff00;
+}
+
+/* Slow floating up and down animation */
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0) scale(1); }
+  25% { transform: translateY(-8px) scale(1.02); }
+  50% { transform: translateY(0) scale(1); }
+  75% { transform: translateY(-8px) scale(1.02); }
+}
+
+.float-slow {
+  animation: floatUpDown 6s infinite ease-in-out;
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform; /* Optimizes animation performance */
+}
+
+/* Hover effect that works with the floating animation */
+.hero-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 6px #c8ff00);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .brand-name {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-logo {
+    width: 250px;
+  }
+  
+  .about-content {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  
+  .experience-badge {
+    bottom: -15px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 2rem;
+  }
+  
+  .brand-name {
+    font-size: 2.5rem;
+  }
+  
+  .description p {
+    font-size: 1.1rem;
+  }
+  
+  .experience-badge {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .experience-badge .years {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-logo {
+    width: 200px;
+  }
+  
+  .welcome-text {
+    font-size: 1.75rem;
+  }
+  
+  .brand-name {
+    font-size: 2rem;
+  }
+  
+  .experience-badge {
+    padding: 8px 15px;
+  }
+  
+  .experience-badge .years {
+    font-size: 1.25rem;
+  }
+}
+.bg-dark{
+  --bs-bg-opacity: 1;
+  background-color: #121212 !important;
+}
+.custom-text {
+  font-size: 18px; /* Adjust as needed */
+}
+.padding{
+  padding: 127px 0;
+}
+
+/* Neon Glow Effects (unchanged) */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 
+      0 0 5px #c8ff00,
+      0 0 10px #c8ff00,
+      0 0 15px #c8ff00,
+      0 0 20px #c8ff00;
+    box-shadow: 
+      0 0 5px #c8ff00,
+      0 0 10px #c8ff00,
+      inset 0 0 5px #c8ff00;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* Mirror Effect Animation (unchanged) */
+@keyframes mirror-wave {
+  0% { transform: scaleY(-1) translateY(0) skewX(0deg); }
+  50% { transform: scaleY(-1) translateY(-5px) skewX(5deg); }
+  100% { transform: scaleY(-1) translateY(0) skewX(0deg); }
+}
+
+/* Solid Button Styles (unchanged) */
+.btn-cipher-solid {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 2px #c8ff00);
+}
+
+.btn-cipher-solid:hover {
+  color: #c8ff00 !important;
+  background: #121212 !important;
+  animation: neon-flicker 1.5s infinite;
+  filter: drop-shadow(0 0 5px #c8ff00);
+}
+
+.btn-cipher-solid:hover .btn-cipher-solid-bg {
+  opacity: 1;
+  background: linear-gradient(45deg, #121212, #c8ff00) !important;
+}
+
+/* Outline Button Styles - Enhanced to match solid button's glow */
+.btn-cipher-outline {
+  color: #c8ff00 !important;
+  background: #121212 !important;
+  /* Match solid button's hover glow */
+  text-shadow: 
+    0 0 5px #c8ff00,
+    0 0 10px #c8ff00,
+    0 0 15px #c8ff00,
+    0 0 20px #c8ff00;
+  box-shadow: 
+    0 0 5px #c8ff00,
+    0 0 10px #c8ff00,
+    inset 0 0 5px #c8ff00;
+  animation: neon-flicker 1.5s infinite;
+  filter: drop-shadow(0 0 2px #c8ff00);
+  transition: all 0.3s ease;
+}
+
+.btn-cipher-outline:hover {
+  color: #121212 !important;
+  background: #c8ff00 !important;
+  /* Keep the same flicker intensity on hover */
+  filter: drop-shadow(0 0 5px #c8ff00);
+}
+
+.btn-cipher-outline:hover .btn-cipher-outline-bg {
+  opacity: 1;
+  background: linear-gradient(45deg, #c8ff00, #121212) !important;
+}
+
+/* Mirror Effect on Hover (unchanged) */
+.btn-cipher-solid:hover .mirror-effect,
+.btn-cipher-outline:hover .mirror-effect {
+  animation: mirror-wave 2s infinite;
+  opacity: 0.7;
+}
+
+/* Text Glow (unchanged) */
+.btn-cipher-solid:hover .btn-text,
+.btn-cipher-outline:hover .btn-text {
+  text-shadow: 0 0 5px #c8ff00;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typewriter-text {
+  border-right: 2px solid #c8ff00;
+  animation: blink 0.7s infinite;
+  padding-right: 2px;
+  margin-right: 0.3rem;
+}
+.ci-ph {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    text-align: center; /* Center text as fallback */
+    padding: 0 10px; /* Add some padding on small screens */
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 768px) {
+    .ci-ph {
+        font-size: 1.8rem; /* Smaller font on mobile */
+    }
+}
+.tooo {
+  background-color: #1b1b1b;
+}

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Security Tools | Cipher Heist</title>
+  <meta name="description" content="Free cybersecurity tools for vulnerability scanning, pentesting, and ethical hacking. Download our collection of open-source security utilities.">
+  <meta name="keywords" content="cybersecurity tools, hacking tools, pentesting tools, vulnerability scanners, ethical hacking software">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Tool Card Styles */
+    .tool-card {
+      background: #1b1b1b;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 2rem;
+      height: 100%;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      border-color: #c8ff00;
+    }
+    
+    .tool-card .icon {
+      font-size: 2.5rem;
+      color: #c8ff00;
+      margin-bottom: 1rem;
+    }
+    
+    .tool-card h3 {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .tool-card p {
+      color: #b0b0b0;
+      margin-bottom: 1.5rem;
+    }
+    
+    .btn-download {
+      background: #c8ff00;
+      color: #121212;
+      border: none;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+      transition: all 0.3s ease;
+    }
+    
+    .btn-download:hover {
+      background: #121212;
+      color: #c8ff00;
+      box-shadow: 0 0 10px rgba(200, 255, 0, 0.5);
+    }
+    
+    /* Tool Hero Section */
+    .tools-hero {
+      background: #121212;
+      padding: 12.41rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .tools-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(200,255,0,0.05) 0%, rgba(0,0,0,0) 70%);
+      z-index: 0;
+    }
+    
+    .tools-hero h1 {
+      color: #fff;
+      font-weight: 700;
+      position: relative;
+    }
+    
+    .tools-hero p {
+      color: #b0b0b0;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    /* Category Filter */
+    .category-filter {
+      margin-bottom: 3rem;
+    }
+    
+    .category-filter .nav-link {
+      color: #b0b0b0;
+      font-weight: 500;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.5rem;
+      position: relative;
+    }
+    
+    .category-filter .nav-link.active {
+      color: #c8ff00;
+      background: transparent;
+    }
+    
+    .category-filter .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 2px;
+      background: #c8ff00;
+    }
+    
+    .category-filter .nav-link:hover {
+      color: #c8ff00;
+    }
+    
+    /* Tool Details */
+    .tool-details {
+      background: #1b1b1b;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .tool-details h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    
+    .tool-details h3 {
+      color: #c8ff00;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .tool-details ul {
+      padding-left: 1.5rem;
+    }
+    
+    .tool-details ul li {
+      color: #b0b0b0;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Featured Tool */
+    .featured-tool {
+      background: linear-gradient(135deg, #121212 0%, #1b1b1b 100%);
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .featured-tool::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, rgba(200,255,0,0.1) 0%, rgba(0,0,0,0) 70%);
+    }
+    
+    .featured-tool .badge {
+      background: #c8ff00;
+      color: #121212;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0px;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    
+    .featured-tool h3 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    
+    .featured-tool p {
+      color: #b0b0b0;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="tools-page">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename brand-name">Cipher Heist</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tools.html" class="active">Tools</a></li>
+          <li><a href="scanner.html">Scanner</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#scanner">Test Your Site</a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <main class="main">
+    <!-- ======= Tools Hero Section ======= -->
+    <section id="contact-hero" class="about-hero section" style="background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(18, 18, 18, 0.9)), url('assets/img/bmw-m4-gt3-fia-5120x2880-16259.jpg') center/cover no-repeat;">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h1 class="mb-3" style="font-weight: 800;">Cybersecurity <span style="color: #c8ff00;">Tools</span></h1>
+            <p class="lead" style="color: #e0e0e0;">Our collection of free, open-source security tools designed for developers, ethical hackers, and security professionals. Download and use these tools to test systems, automate security workflows, and enhance your cybersecurity skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tools Hero -->
+
+
+    <!-- ======= Tools Section ======= -->
+    <section id="tools" class="tools-section section">
+      <div class="container">
+        <!-- Category Filter -->
+        <div class="category-filter text-center" data-aos="fade-up">
+          <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-filter="all">All Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter="windows">Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter="web">Web Security</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter="network">Network</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter="educational">Educational</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Featured Tool -->
+<div class="featured-tool position-relative" data-aos="fade-up" style="padding-top: 2.5rem;">
+  <!-- Featured badge positioned absolutely in top-right corner -->
+  <span class="badge position-absolute top-0 end-0" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap; margin: 1rem;">
+    <span class="btn-text">Featured</span>
+    <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+    <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+  </span>
+  
+  <div class="row align-items-center">
+    <div class="col-lg-8">
+      <h3>CleanWindowsPro</h3>
+      <p>The ultimate Windows optimization and security tool that removes bloatware, enhances system performance, and identifies potential security vulnerabilities in your Windows installation.</p>
+      <div class="d-flex align-items-center">
+        <span class="me-3"><i class="bi bi-star-fill text-warning me-1"></i> 4.9 (1,200 reviews)</span>
+        <span><i class="bi bi-download text-primary me-1"></i> 8,500+ downloads</span>
+      </div>
+    </div>
+    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+      <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+        <span class="btn-text">Download v2.5.1</span>
+        <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+        <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+        <!-- Tools Grid -->
+        <div class="row gy-4">
+          <!-- Tool 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="tool-card">
+              <div class="icon">
+                <i class="bi bi-windows"></i>
+              </div>
+              <h3>CleanWindowsPro</h3>
+              <p>A powerful Windows optimization tool that removes bloatware and enhances system performance while identifying security issues.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-dark">Windows</span>
+                                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="tool-card">
+              <div class="icon">
+                <i class="bi bi-terminal"></i>
+              </div>
+              <h3>HackTypeFX</h3>
+              <p>Hacker-style terminal simulator with realistic typing effects for security demonstrations and educational purposes.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-dark">Educational</span>
+                                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="tool-card">
+              <div class="icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <h3>PortGuard</h3>
+              <p>Lightweight port scanner and firewall tester for network security assessments and vulnerability detection.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-dark">Network</span>
+                                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="tool-card">
+              <div class="icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h3>WebShield</h3>
+              <p>Comprehensive web application scanner that detects common vulnerabilities like XSS, SQLi, and CSRF.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-dark">Web Security</span>
+                                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="tool-card">
+              <div class="icon">
+                <i class="bi bi-file-lock"></i>
+              </div>
+              <h3>FileVault</h3>
+              <p>Encryption utility that protects sensitive files with military-grade AES-256 encryption.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-dark">Windows</span>
+                                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="tool-card">
+              <div class="icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h3>AutoExploit</h3>
+              <p>Educational tool that demonstrates common exploitation techniques in a safe environment.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-dark">Educational</span>
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tools Section -->
+
+
+    <!-- ======= Tool Details Section ======= -->
+    <section class="tool-details-section section bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="tool-details">
+              <h2>Tool Documentation & Resources</h2>
+              
+              <h3>Installation Guides</h3>
+              <p>Detailed instructions for installing and configuring our security tools on various platforms.</p>
+              
+              <h3>Usage Examples</h3>
+              <p>Practical examples showing how to use each tool effectively in real-world scenarios.</p>
+              
+              <h3>Frequently Asked Questions</h3>
+              <ul>
+                <li>Are these tools really free to use?</li>
+                <li>Can I use these tools for commercial purposes?</li>
+                <li>How often are the tools updated?</li>
+                <li>Where can I report bugs or security issues?</li>
+                <li>Can I contribute to the development of these tools?</li>
+              </ul>
+              
+              <h3>Community Support</h3>
+              <p>Join our growing community of security professionals and enthusiasts to get help, share knowledge, and contribute to the projects.</p>
+              
+              <div class="text-center mt-4">
+
+              
+              
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text"><i class="bi bi-discord me-1"></i> Join Discord</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              
+                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text"><i class="bi bi-github me-1"></i> GitHub Community</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tool Details Section -->
+
+
+    <!-- ======= CTA Section ======= -->
+    <section class="cta-section section tooo">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h2>Have a Security Tool to Share?</h2>
+            <p class="mb-4">We welcome contributions from the security community. Submit your open-source security tool to be featured in our collection.</p>
+
+            <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+              <span class="btn-text"><i class="bi bi-github me-1"></i> Submit via GitHub</span>
+              <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+              <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+            </a>
+
+            <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+              <span class="btn-text"><i class="bi bi-envelope me-1"></i> Email Submission</span>
+              <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+              <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+            </a>
+          
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA Section -->
+  </main>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Cipher Heist</span>
+          </a>
+          <p class="mt-3">Providing cutting-edge cybersecurity tools and resources since 2020. Our mission is to democratize security knowledge and make digital protection accessible to everyone.</p>
+          
+          <div class="social-links d-flex mt-4">
+            <a href="https://github.com/nizath" class="github"><i class="bi bi-github"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="discord"><i class="bi bi-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="index.html#scanner">Scanner</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Tools</h4>
+          <ul>
+            <li><a href="#"><i class="bi bi-shield-shaded"></i> CleanWindowsPro</a></li>
+            <li><a href="#"><i class="bi bi-keyboard"></i> HackTypeFX</a></li>
+            <li><a href="#"><i class="bi bi-ethernet"></i> PortGuard</a></li>
+            <li><a href="tools.html"><i class="bi bi-collection"></i> All Tools</a></li>
+            <li><a href="#"><i class="bi bi-cloud-arrow-up"></i> Submit Tool</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Have questions, suggestions, or vulnerability reports? Our team is here to help.</p>
+          <p class="mt-4"><strong><i class="bi bi-envelope"></i> Email:</strong> <span>security@cipherheist.com</span></p>
+          <p><strong><i class="bi bi-github"></i> GitHub:</strong> <span><a href="https://github.com/nizath">github.com/cipherheist</a></span></p>
+          <p><strong><i class="bi bi-shield-lock"></i> PGP Key:</strong> <span><a href="#">0xABCDEF123456</a></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cipher Heist</strong> <span>2020-2023 All Rights Reserved</span></p>
+      <div class="credits">
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms of Service</a> | 
+        <a href="disclaimer.html">Disclaimer</a> |
+        <a href="bug-bounty.html">Bug Bounty</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Filter tools by category
+    document.querySelectorAll('.category-filter .nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Update active state
+        document.querySelector('.category-filter .nav-link.active').classList.remove('active');
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        
+        // Filter tools
+        if (filter === 'all') {
+          document.querySelectorAll('.tools-section .tool-card').forEach(card => {
+            card.parentElement.style.display = 'block';
+          });
+        } else {
+          document.querySelectorAll('.tools-section .tool-card').forEach(card => {
+            if (card.querySelector('.badge').textContent.toLowerCase() === filter) {
+              card.parentElement.style.display = 'block';
+            } else {
+              card.parentElement.style.display = 'none';
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+    <!-- ======= Resources Section ======= -->
+    <!-- <section id="resources" class="resources section bg-dark">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Security Resources</h2>
+          <p class="text-light">Free educational materials for cybersecurity professionals</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="bi bi-journal-bookmark"></i>
+              </div>
+              <h3>Blog Articles</h3>
+              <p>Regularly updated blog with tutorials, security news, and vulnerability analyses.</p>
+              <a href="#" class="btn btn-outline-light mt-3">Read Articles</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="bi bi-file-earmark-pdf"></i>
+              </div>
+              <h3>PDF Guides</h3>
+              <p>Downloadable guides on penetration testing, secure coding, and system hardening.</p>
+              <a href="#" class="btn btn-outline-light mt-3">Download PDFs</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h3>Hacking Tutorials</h3>
+              <p>Step-by-step tutorials for ethical hacking techniques and vulnerability exploitation.</p>
+              <a href="#" class="btn btn-outline-light mt-3">View Tutorials</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>End Resources Section -->
+
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div><span>Learn More</span> <span class="description-title">About Me</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image position-relative">
+              <img src="assets/img/about/about-portrait-1.webp" class="img-fluid" alt="Nizath" loading="lazy">
+              <div class="experience-badge">
+                <span class="years">5+</span>
+                <span class="text">Years of Expertise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <h2>Nizath - Cybersecurity & System Programming Specialist</h2>
+              <p class="lead">A self-taught ethical hacker and system programmer from Sri Lanka, driven by discipline and a passion for mastering cybersecurity.</p>
+              <p>With a strong foundation in low-level programming, reverse engineering, and malware analysis, I craft innovative solutions to secure digital environments. My goal is to become a world-class cybersecurity engineer, inspired by challenges like Cicada 3301, and to establish my own cybersecurity company.</p>
+
+              <div class="row g-4 mt-3">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h5>Technical Expertise</h5>
+                    <p>Proficient in C, Python, Assembly, and tools like GDB and IDA Pro, specializing in ethical hacking, system programming, and memory exploitation.</p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="feature-item">
+                    <i class="bi bi-lightbulb-fill"></i>
+                    <h5>Innovative Projects</h5>
+                    <p>Developed tools like CleanWindowsPro, HackTypeFX, and a custom IDS, with ongoing work on a mobile-to-PC remote control tool.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://github.com/nizath" class="btn btn-primary mt-4">View My GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <style>
+        :root {
+            --neon-green: #39ff14;
+            --neon-blue: #00f6ff;
+            --dark-bg: #0a0a0a;
+        }
+        
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: var(--dark-bg);
+            color: #e5e7eb;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Space Mono', monospace;
+        }
+        
+        .neon-text-green {
+            color: var(--neon-green);
+            text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
+        }
+        
+        .neon-text-blue {
+            color: var(--neon-blue);
+            text-shadow: 0 0 5px rgba(0, 246, 255, 0.5);
+        }
+        
+        .neon-border-green {
+            border: 1px solid var(--neon-green);
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+        }
+        
+        .neon-border-blue {
+            border: 1px solid var(--neon-blue);
+            box-shadow: 0 0 10px rgba(0, 246, 255, 0.3);
+        }
+        
+        .btn-neon {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-neon:hover {
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
+            transform: translateY(-2px);
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 246, 255, 0.2);
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(57, 255, 20, 0.2);
+        }
+    </style>
