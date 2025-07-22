@@ -28,127 +28,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Service Card Hover Effects */
-    .service-card {
-      background: #1b1b1b;
-      border: 1px solid #252525;
-      transition: all 0.3s ease;
-      height: 100%;
-    }
-    
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(200, 255, 0, 0.1);
-      border-color: #c8ff00;
-    }
-    
-    .service-card .icon {
-      color: #c8ff00;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .service-card .btn-service {
-      background: transparent;
-      color: #c8ff00;
-      border: 1px solid #c8ff00;
-      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
-      transition: all 0.3s ease;
-    }
-    
-    .service-card .btn-service:hover {
-      background: #c8ff00;
-      color: #121212;
-    }
-    
-    /* Process Steps */
-    .process-step {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 30px;
-    }
-    
-    .process-step:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 20px;
-      height: 20px;
-      background: #c8ff00;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    }
-    
-    .process-step:after {
-      content: "";
-      position: absolute;
-      left: 9px;
-      top: 25px;
-      width: 2px;
-      height: calc(100% - 25px);
-      background: #c8ff00;
-    }
-    
-    .process-step:last-child:after {
-      display: none;
-    }
-    
-    /* Pricing Table */
-    .pricing-card {
-      background: #1b1b1b;
-      border: 1px solid #252525;
-      transition: all 0.3s ease;
-    }
-    
-    .pricing-card.featured {
-      border-color: #c8ff00;
-      transform: scale(1.03);
-      box-shadow: 0 10px 30px rgba(200, 255, 0, 0.1);
-    }
-    
-    .pricing-card .price {
-      color: #c8ff00;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    
-    .pricing-card .btn-pricing {
-      background: #c8ff00;
-      color: #121212;
-      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
-      transition: all 0.3s ease;
-    }
-    
-    .pricing-card .btn-pricing:hover {
-      background: #121212;
-      color: #c8ff00;
-      box-shadow: 0 0 10px rgba(200, 255, 0, 0.5);
-    }
-    
-    /* Testimonial Section */
-    .testimonial-card {
-      background: #1b1b1b;
-      border-left: 3px solid #c8ff00;
-    }
-    
-    /* FAQ Section */
-    .accordion-button {
-      background: #1b1b1b;
-      color: #fff;
-    }
-    
-    .accordion-button:not(.collapsed) {
-      background: #252525;
-      color: #c8ff00;
-    }
-    
-    .accordion-button:focus {
-      box-shadow: 0 0 0 0.25rem rgba(200, 255, 0, 0.25);
-    }
-    
-    .accordion-body {
-      background: #1b1b1b;
-    }
   </style>
 </head>
 <body class="services-page">
@@ -187,7 +66,7 @@
             
             <div class="d-flex justify-content-center gap-3">
               <!-- Solid Button (Test Your Website) -->
-              <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); margin-right: 1rem; overflow: hidden;">
+              <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); margin-right: 1rem; overflow: hidden;">
                 <span class="btn-text">Explore Services</span>
                 <i class="bi bi-shield-check ms-2"></i>
                 <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
@@ -195,14 +74,13 @@
               </a>
               
               <!-- Outline Button (View Services) -->
-              <a href="#scanner" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
+              <a href="contact.html" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
                 <span class="btn-text">Request Consultation</span>
                 <i class="bi bi-shield-check ms-2"></i>
                 <span class="btn-cipher-outline-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #121212, #c8ff00); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                 <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
               </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -232,7 +110,7 @@
                 <li>API Security Testing</li>
                 <li>Social Engineering</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Learn More</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -254,7 +132,7 @@
                 <li>Risk Scoring</li>
                 <li>Remediation Planning</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Learn More</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -276,7 +154,7 @@
                 <li>Policy Development</li>
                 <li>Incident Response Planning</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Learn More</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -298,7 +176,7 @@
                 <li>OWASP Top 10 Coverage</li>
                 <li>Remediation Guidance</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Learn More</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -320,7 +198,7 @@
                 <li>Breach Containment</li>
                 <li>Post-Incident Analysis</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Learn More</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -342,7 +220,7 @@
                 <li>Red Team Training</li>
                 <li>Executive Briefings</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Learn More</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -423,7 +301,7 @@
                 <li><i class="bi bi-x text-secondary me-2"></i> Manual Verification</li>
                 <li><i class="bi bi-x text-secondary me-2"></i> Remediation Guidance</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Get Started</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -445,7 +323,7 @@
                 <li><i class="bi bi-check text-success me-2"></i> Remediation Guidance</li>
                 <li><i class="bi bi-x text-secondary me-2"></i> Retesting Included</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Get Started</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -466,7 +344,7 @@
                 <li><i class="bi bi-check text-success me-2"></i> Remediation Support</li>
                 <li><i class="bi bi-check text-success me-2"></i> Retesting Included</li>
               </ul>
-                <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                   <span class="btn-text">Contact Us</span>
                   <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                   <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -477,7 +355,7 @@
 
         <div class="text-center mt-5" data-aos="fade-up">
           <p class="mb-3">Need something different? We offer custom engagements tailored to your specific requirements.</p>
-          <a href="#scanner" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
+          <a href="contact.html" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
             <span class="btn-text">Request Custom Quote</span>
             <span class="btn-cipher-outline-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #121212, #c8ff00); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
             <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -635,12 +513,12 @@
             <h2 class="mb-4">Ready to Strengthen Your Security?</h2>
             <p class="mb-4">Contact us today to discuss your security needs and get a customized assessment plan.</p>
             <div class="d-flex justify-content-center gap-3">
-              <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); margin-right: 1rem; overflow: hidden;">
+              <a href="contact.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; color: #121212; background: #c8ff00; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); margin-right: 1rem; overflow: hidden;">
                 <span class="btn-text">Get in Touch</span>
                 <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                 <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
               </a>
-              <a href="#scanner" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
+              <a href="contact.html" class="btn-cipher-outline" style="display: inline-flex; align-items: center; color: #c8ff00; background: transparent; padding: 0.5rem 1.5rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); border: 1px solid #c8ff00; overflow: hidden;">
                 <span class="btn-text">Call Now</span>
                 <span class="btn-cipher-outline-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #121212, #c8ff00); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                 <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -666,7 +544,7 @@
           
           <div class="social-links d-flex mt-4">
             <a href="https://github.com/nizath" class="github"><i class="bi bi-github"></i></a>
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             <a href="#" class="discord"><i class="bi bi-discord"></i></a>
           </div>
@@ -706,7 +584,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cipher Heist</strong> <span>2020-2023 All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cipher Heist</strong> <span>2020-2025 All Rights Reserved</span></p>
       <div class="credits">
         <a href="privacy.html">Privacy Policy</a> | 
         <a href="terms.html">Terms of Service</a> | 

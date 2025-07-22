@@ -28,139 +28,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
   
   <style>
-    .resource-card {
-      background: #1b1b1b;
-      border: 1px solid #2a2a2a;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      height: 100%;
-    }
-    
-    .resource-card:hover {
-      transform: translateY(-5px);
-      border-color: #c8ff00;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-    
-    .resource-card .card-header {
-      background: #121212;
-      border-bottom: 1px solid #2a2a2a;
-      padding: 1rem;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    }
-    
-    .resource-card .card-body {
-      padding: 1.5rem;
-    }
-    
-    .resource-category {
-      color: #c8ff00;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      display: inline-block;
-    }
-    
-    .resource-title {
-      color: #fff;
-      margin-bottom: 1rem;
-    }
-    
-    .resource-description {
-      color: #ffffff66;
-      margin-bottom: 1.5rem;
-    }
-    
-    .btn-resource {
-      background: #c8ff00;
-      color: #121212;
-      font-weight: 600;
-      border: none;
-      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
-      transition: all 0.3s ease;
-    }
-    
-    .btn-resource:hover {
-      background: #121212;
-      color: #c8ff00;
-    }
-    
-    .resources-hero {
-      background: linear-gradient(135deg, #121212 0%, #1b1b1b 100%);
-      padding: 12.36rem 0;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .resources-hero::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(200,255,0,0.05) 0%, transparent 70%);
-      z-index: 0;
-    }
-    
-    .hero-heading {
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      position: relative;
-    }
-    
-    .hero-subheading {
-      color: #c8ff00;
-      font-weight: 600;
-      margin-bottom: 2rem;
-    }
-    
-    .search-box {
-      position: relative;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .search-input {
-      background: #121212;
-      border: 2px solid #2a2a2a;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      width: 100%;
-    }
-    
-    .search-input:focus {
-      border-color: #c8ff00;
-      box-shadow: 0 0 0 0.25rem rgba(200, 255, 0, 0.25);
-    }
-    
-    .search-btn {
-      position: absolute;
-      right: 5px;
-      top: 5px;
-      background: #c8ff00;
-      color: #121212;
-      border: none;
-      border-radius: 50px;
-      padding: 0.5rem 1.25rem;
-      font-weight: 600;
-    }
-    
-    .section-title h2 {
-      color: #fff;
-    }
-    
-    .section-title span {
-      color: #c8ff00;
-    }
-    
-    .resource-icon {
-      font-size: 2rem;
-      color: #c8ff00;
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
 <body class="resources-page">
@@ -184,13 +51,13 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#scanner">Test Your Site</a>
+      <a class="btn-getstarted" href="scanner.html#live-scan">Test Your Site</a>
     </div>
   </header><!-- End Header -->
 
   <main class="main">
     <!-- ======= Resources Hero Section ======= -->
-    <section id="contact-hero" class="about-hero section" style="background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(18, 18, 18, 0.9)), url('assets/img/bmw-m4-gt3-fia-5120x2880-16259.jpg') center/cover no-repeat;">
+    <section id="resources-hero" class="about-hero section" style="background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(18, 18, 18, 0.9)), url('assets/img/bmw-m4-gt3-fia-5120x2880-16259.jpg') center/cover no-repeat;">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8" data-aos="fade-up">
@@ -198,7 +65,7 @@
             <p class="lead" style="color: #e0e0e0;">Free tutorials, cheat sheets, and guides for security professionals</p>
 
             <div class="search-box" data-aos="fade-up" data-aos-delay="100">
-              <input type="text" class="search-input" placeholder="Search resources...">
+              <input type="text" class="search-input" placeholder="Search resources..." aria-label="Search cybersecurity resources">
               <button class="search-btn">Search</button>
             </div>
           </div>
@@ -221,11 +88,11 @@
                 <i class="bi bi-shield-lock resource-icon"></i>
                 <h3 class="resource-title">Pentesting Guides</h3>
                 <p class="resource-description">Step-by-step penetration testing methodologies and techniques</p>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
-                    <span class="btn-text">View Resources</span>
-                    <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
-                    <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
-                  </a>
+                <a href="pentesting-guides.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">View Resources</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -236,11 +103,11 @@
                 <i class="bi bi-code-square resource-icon"></i>
                 <h3 class="resource-title">Web Security</h3>
                 <p class="resource-description">OWASP Top 10, XSS, SQLi, CSRF and other web vulnerabilities</p>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
-                    <span class="btn-text">View Resources</span>
-                    <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
-                    <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
-                  </a>
+                <a href="web-security.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">View Resources</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -251,11 +118,11 @@
                 <i class="bi bi-terminal resource-icon"></i>
                 <h3 class="resource-title">CLI Tools</h3>
                 <p class="resource-description">Command line tools documentation and usage examples</p>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
-                    <span class="btn-text">View Resources</span>
-                    <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
-                    <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
-                  </a>
+                <a href="cli-tools.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">View Resources</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -266,11 +133,11 @@
                 <i class="bi bi-file-earmark-text resource-icon"></i>
                 <h3 class="resource-title">Cheat Sheets</h3>
                 <p class="resource-description">Quick reference guides for common tools and techniques</p>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
-                    <span class="btn-text">View Resources</span>
-                    <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
-                    <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
-                  </a>
+                <a href="cheat-sheets.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <span class="btn-text">View Resources</span>
+                  <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                  <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -297,7 +164,7 @@
                 <p class="resource-description">A comprehensive guide to testing web applications for vulnerabilities from reconnaissance to exploitation.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="resource-description">25 min read</span>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <a href="web-app-pentesting.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                     <span class="btn-text">Read Guide</span>
                     <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                     <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -317,7 +184,7 @@
                 <p class="resource-description">All essential Nmap commands for network scanning and enumeration in one handy reference.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="resource-description">PDF Download</span>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <a href="nmap-cheatsheet.pdf" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                     <span class="btn-text">Download</span>
                     <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                     <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -337,7 +204,7 @@
                 <p class="resource-description">Learn how to use Burp Suite for web application testing with this step-by-step video guide.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="resource-description">42 min video</span>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <a href="burp-suite-tutorial.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                     <span class="btn-text">Watch Now</span>
                     <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                     <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -357,7 +224,7 @@
                 <p class="resource-description">Learn advanced features and customization options for our CleanWindowsPro tool.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="resource-description">Tool Guide</span>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <a href="cleanwindowspro-docs.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                     <span class="btn-text">View Docs</span>
                     <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                     <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -377,7 +244,7 @@
                 <p class="resource-description">Understand encryption, hashing, and cryptographic protocols with practical examples.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="resource-description">Beginner's Guide</span>
-                   <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <a href="cryptography-fundamentals.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                     <span class="btn-text">Read Now</span>
                     <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                     <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -397,7 +264,7 @@
                 <p class="resource-description">Quick reference for common Linux privilege escalation techniques and commands.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="resource-description">PDF Download</span>
-                  <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                  <a href="linux-priv-esc.pdf" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
                     <span class="btn-text">Download</span>
                     <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
                     <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -409,7 +276,7 @@
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up">
-          <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.9rem 3rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+          <a href="all-resources.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.9rem 3rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
             <span class="btn-text">View All Resources</span>
             <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
             <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
@@ -426,28 +293,23 @@
             <h2 class="mb-4" style="color: #fff;">Get Security Updates</h2>
             <p class="mb-4" style="color: #b0b0b0;">Subscribe to our newsletter for new resources, tool updates, and security tips.</p>
             
-            <form class="newsletter-form">
-
+            <form class="newsletter-form" action="subscribe.html">
               <div class="row align-items-center">
                 <div class="col-lg-9">
                   <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Your email address" style="background: #121212; border: 1px solid #2a2a2a; color: #fff;">
+                    <input type="email" class="form-control" placeholder="Your email address" style="background: #121212; border: 1px solid #2a2a2a; color: #fff;" aria-label="Email address for newsletter subscription">
                   </div>
                 </div>
-              <div class="col-lg-3 mt-3 mt-lg-0">
-                  <div class="col-lg-3 mt-3 mt-lg-0">
-                    <div style="text-align: center;">
-                      <a href="#scanner" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 3rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
-                        <span class="btn-text">Subscribe</span>
-                        <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
-                        <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
-                      </a>
-                    </div>
+                <div class="col-lg-3 mt-3 mt-lg-0">
+                  <div style="text-align: center;">
+                    <a href="subscribe.html" class="btn-cipher-solid" style="display: inline-flex; align-items: center; justify-content: center; color: #121212; background: #c8ff00; padding: 0.5rem 3rem; font-size: 0.9rem; font-weight: 600; position: relative; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); overflow: hidden; white-space: nowrap;">
+                      <span class="btn-text">Subscribe</span>
+                      <span class="btn-cipher-solid-bg" style="position: absolute; inset: -1px; background: linear-gradient(45deg, #c8ff00, #121212); z-index: -1; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); opacity: 0; transition: all 0.3s ease;"></span>
+                      <span class="mirror-effect" style="position: absolute; bottom: -50%; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(200, 255, 0, 0.4), transparent); transform: scaleY(-1); opacity: 0.5; filter: blur(2px);"></span>
+                    </a>
                   </div>
                 </div>
               </div>
-
-              
               
               <div class="form-check text-start">
                 <input class="form-check-input" type="checkbox" id="privacyCheck" checked>
@@ -460,86 +322,86 @@
         </div>
       </div>
     </section><!-- End Newsletter Section -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Cipher Heist</span>
-            </a>
-            <p class="mt-3">Providing cutting-edge cybersecurity tools and resources since 2020. Our mission is to democratize security knowledge and make digital protection accessible to everyone.</p>
-            
-            <div class="social-links d-flex mt-4">
-              <a href="https://github.com/nizath" class="github"><i class="bi bi-github"></i></a>
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="discord"><i class="bi bi-discord"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#tools">Tools</a></li>
-              <li><a href="index.html#scanner">Scanner</a></li>
-              <li><a href="resources.html">Resources</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">Pentesting Guides</a></li>
-              <li><a href="#">Web Security</a></li>
-              <li><a href="#">CLI Tools</a></li>
-              <li><a href="#">Cheat Sheets</a></li>
-              <li><a href="#">Video Tutorials</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>Have questions, suggestions, or vulnerability reports? Our team is here to help.</p>
-            <p class="mt-4"><strong><i class="bi bi-envelope"></i> Email:</strong> <span>security@cipherheist.com</span></p>
-            <p><strong><i class="bi bi-github"></i> GitHub:</strong> <span><a href="https://github.com/nizath">github.com/cipherheist</a></span></p>
-            <p><strong><i class="bi bi-shield-lock"></i> PGP Key:</strong> <span><a href="#">0xABCDEF123456</a></span></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Cipher Heist</strong> <span>2020-2023 All Rights Reserved</span></p>
-        <div class="credits">
-          <a href="privacy.html">Privacy Policy</a> | 
-          <a href="terms.html">Terms of Service</a> | 
-          <a href="disclaimer.html">Disclaimer</a> |
-          <a href="bug-bounty.html">Bug Bounty</a>
-        </div>
-      </div>
-    </footer><!-- End Footer -->
-
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
   </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Cipher Heist</span>
+          </a>
+          <p class="mt-3">Providing cutting-edge cybersecurity tools and resources since 2020. Our mission is to democratize security knowledge and make digital protection accessible to everyone.</p>
+          
+          <div class="social-links d-flex mt-4">
+            <a href="https://github.com/nizath" class="github"><i class="bi bi-github"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="discord"><i class="bi bi-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="scanner.html">Scanner</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="pentesting-guides.html">Pentesting Guides</a></li>
+            <li><a href="web-security.html">Web Security</a></li>
+            <li><a href="cli-tools.html">CLI Tools</a></li>
+            <li><a href="cheat-sheets.html">Cheat Sheets</a></li>
+            <li><a href="all-resources.html">Video Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Have questions, suggestions, or vulnerability reports? Our team is here to help.</p>
+          <p class="mt-4"><strong><i class="bi bi-envelope"></i> Email:</strong> <span>security@cipherheist.com</span></p>
+          <p><strong><i class="bi bi-github"></i> GitHub:</strong> <span><a href="https://github.com/nizath">github.com/cipherheist</a></span></p>
+          <p><strong><i class="bi bi-shield-lock"></i> PGP Key:</strong> <span><a href="#">0xABCDEF123456</a></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cipher Heist</strong> <span>2020-2025 All Rights Reserved</span></p>
+      <div class="credits">
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms of Service</a> | 
+        <a href="disclaimer.html">Disclaimer</a> |
+        <a href="bug-bounty.html">Bug Bounty</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
